@@ -147,7 +147,6 @@ endif
 
 all:
 	+$(call kernelbuild,modules)
-	@gzip -c ../${DRIVER}.${MANSECTION} > ${DRIVER}.${MANSECTION}.gz
 ifneq ($(wildcard lttng),)
 	$(MAKE) -C lttng
 endif
