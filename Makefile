@@ -14,11 +14,11 @@ endif
 
 #added for simplicity to build in OCP
 ifndef KVER
-KVER=$(shell uname -r)
+export KVER=$(shell uname -r)
 endif
 
 ifndef BUILD_KERNEL
-BUILD_KERNEL=$(shell uname -r)
+export BUILD_KERNEL=$(shell uname -r)
 endif
 
 # Explicitly set shell to bash, to avoid issues on distros with a different
