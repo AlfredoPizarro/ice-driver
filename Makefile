@@ -18,7 +18,7 @@ KVER=$(shell uname -r)
 endif
 
 ifndef BUILD_KERNEL
-KVER=$(shell uname -r)
+BUILD_KERNEL=$(shell uname -r)
 endif
 
 # Explicitly set shell to bash, to avoid issues on distros with a different
