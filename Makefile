@@ -12,14 +12,6 @@ ifeq ($(MAKELEVEL),0)
   endif
 endif
 
-#added for simplicity to build in OCP
-ifndef KVER
-export KVER=$(shell uname -r)
-endif
-
-ifndef BUILD_KERNEL
-export BUILD_KERNEL=$(shell uname -r)
-endif
 
 # Explicitly set shell to bash, to avoid issues on distros with a different
 # default shell. Looking at you, Ubuntu.
